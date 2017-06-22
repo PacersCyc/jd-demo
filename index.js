@@ -1,0 +1,1 @@
+var show=require('./show')
