@@ -1,10 +1,16 @@
-var webpack=require('webpack')
+var webpack = require('webpack')
+var path = require('path')
 
-module.exports={
-  watch:true,
-  entry:"./index.js",
-  output:{
-    filename:'./dist/bundle.js'
+console.log(path.resolve('./dist'))
+module.exports = {
+  watch: true,
+  entry: {
+    'jd-index': './index.js',
+    'test-demo': './demo.js'
+  },
+  output: {
+    path: path.resolve('./dist'),
+    filename:'[name].js'
   },
   devtool: 'source-map'
 }

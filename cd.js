@@ -32,6 +32,7 @@ function FreshTime(){
 		clearInterval(sh);
 	}
 }
-FreshTime();
+module.exports = FreshTime
+// FreshTime();
 var sh;
 sh=setInterval(FreshTime,500);
